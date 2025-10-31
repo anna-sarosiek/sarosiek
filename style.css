@@ -1,20 +1,13 @@
 /* ====== Global layout ====== */
 body {
   font-family: "Georgia", "Garamond", "Palatino Linotype", serif;
-  background-color: #f4efe6;
-  background-image: radial-gradient(#f9f6f0 1px, transparent 1px);
-  background-size: 20px 20px; /* delikatna faktura papieru */
+  background-color: #f4efe6; /* ciepły beżowy ton */
   color: #2b2b2b;
   margin: 0 auto;
   max-width: 820px;
   padding: 45px 25px;
   line-height: 1.75;
   letter-spacing: 0.02em;
-}
-
-/* ====== Smooth transitions ====== */
-a, button {
-  transition: color 0.3s ease, text-shadow 0.3s ease;
 }
 
 /* ====== Navigation ====== */
@@ -29,55 +22,39 @@ nav a {
   margin: 0 10px;
 }
 nav a:hover {
-  color: #002d6e;
-  text-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
+  text-decoration: underline;
 }
 
 /* ====== Headings ====== */
 h1, h2 {
-  color: #2b2b2b;
+  color: #003366;
   text-align: center;
   margin-top: 0;
-  letter-spacing: 0.03em;
-  text-shadow: 1px 1px 2px rgba(80, 70, 50, 0.15); /* efekt tłoczenia */
-}
-h1 {
-  font-size: 2em;
-}
-h2 {
-  font-size: 1.3em;
-  color: #3b3b3b;
 }
 
 /* ====== Header ====== */
 header {
   background-color: #f7f3ea;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
-  padding: 25px;
-  border-radius: 10px;
-  margin-bottom: 35px;
-  transition: box-shadow 0.3s ease;
-}
-header:hover {
-  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08); /* delikatny cień */
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 30px;
 }
 
-/* ====== Main content ====== */
+/* ====== Main content block ====== */
 main {
-  background-color: #f0ece4; /* cieplejszy beż, zamiast bieli */
-  border-radius: 12px;
-  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
-  padding: 35px 45px;
-  border: 1px solid #e2dccf; /* subtelna ramka */
+  background-color: #f7f4ee;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  padding: 30px 40px;
 }
-
 
 /* ====== Footer ====== */
 footer {
   text-align: center;
-  margin-top: 60px;
+  margin-top: 50px;
   font-size: 0.9em;
   color: #777;
-  border-top: 1px solid #e0dcd2;
-  padding-top: 25px;
+  border-top: 1px solid #e0e0e0;
+  padding-top: 20px;
 }
