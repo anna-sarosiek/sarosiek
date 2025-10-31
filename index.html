@@ -4,8 +4,38 @@
   <meta charset="UTF-8">
   <title>Anna Sarosiek – Cognitive Science</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    /* === Language switch === */
+    .lang-switch {
+      text-align: right;
+      margin-bottom: 10px;
+      font-size: 0.9em;
+    }
+    .lang-switch button {
+      border: none;
+      background: none;
+      color: #0047ab;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    .lang-switch button.active {
+      text-decoration: underline;
+      color: #002d6e;
+    }
+    .lang {
+      display: none;
+    }
+    .lang.active {
+      display: block;
+    }
+  </style>
 </head>
 <body>
+
+  <div class="lang-switch">
+    <button id="btn-en" class="active">EN</button> | 
+    <button id="btn-pl">PL</button>
+  </div>
 
   <nav>
     <a href="#about">About</a> |
@@ -14,19 +44,29 @@
 
   <header>
     <h1>Anna Sarosiek</h1>
-    <p>Cognitive scientist exploring meaning, adaptation, and intelligent systems.</p>
+    <p class="lang en active">Cognitive scientist exploring meaning, adaptation, and intelligent systems.</p>
+    <p class="lang pl">Kognitywistka badająca znaczenie, adaptację i inteligentne systemy.</p>
   </header>
 
   <main>
     <section id="about">
-      <h2>About</h2>
-      <p>I work between philosophy, biosemiotics, and cognitive science, tracing how meaning grows in systems that sense, adapt, and transform. I study signs in life—from ants mapping invisible paths to moss reading humidity—and ask what it means for intelligence to emerge without intention. work at the intersection of cognitive science, philosophy, and artificial intelligence.
-      My research focuses on biosemiotics, homeostasis, and adaptive systems that self-regulate and evolve.</p>
-      <p>This site collects teaching materials, research notes, and reflections linking theory and practice.</p>
+      <h2>About / O mnie</h2>
+
+      <div class="lang en active">
+        <p>I work at the intersection of philosophy, biosemiotics, and cognitive science, exploring how meaning emerges in systems that sense, adapt, and transform. 
+        I study signs in living processes — from ants mapping invisible paths to moss responding to humidity — and ask what it means for intelligence to arise without intention.</p>
+        <p>This site gathers teaching materials, research notes, and reflections connecting theory with practice.</p>
+      </div>
+
+      <div class="lang pl">
+        <p>Pracuję na styku filozofii, biosemiotyki i kognitywistyki, badając, jak znaczenie wyłania się w systemach, które odczuwają, adaptują się i przekształcają. 
+        Interesują mnie znaki w procesach życia — od mrówek wytyczających niewidzialne ścieżki po mech reagujący na wilgotność — oraz pytanie, co znaczy, że inteligencja może powstać bez intencji.</p>
+        <p>Na tej stronie gromadzę materiały dydaktyczne, notatki badawcze i refleksje łączące teorię z praktyką.</p>
+      </div>
     </section>
 
     <section id="labs">
-      <h2>Laboratory Resources</h2>
+      <h2>Laboratory / Laboratorium</h2>
       <ul>
         <li><a href="https://anna-sarosiek.github.io/labs/">JupyterLite – Python in the browser</a></li>
         <li><a href="https://colab.research.google.com/">Google Colab</a></li>
@@ -37,6 +77,27 @@
   <footer>
     <p>© 2025 Anna Sarosiek</p>
   </footer>
+
+  <script>
+    const btnEN = document.getElementById('btn-en');
+    const btnPL = document.getElementById('btn-pl');
+    const langEN = document.querySelectorAll('.en');
+    const langPL = document.querySelectorAll('.pl');
+
+    btnEN.addEventListener('click', () => {
+      btnEN.classList.add('active');
+      btnPL.classList.remove('active');
+      langEN.forEach(el => el.classList.add('active'));
+      langPL.forEach(el => el.classList.remove('active'));
+    });
+
+    btnPL.addEventListener('click', () => {
+      btnPL.classList.add('active');
+      btnEN.classList.remove('active');
+      langPL.forEach(el => el.classList.add('active'));
+      langEN.forEach(el => el.classList.remove('active'));
+    });
+  </script>
 
 </body>
 </html>
