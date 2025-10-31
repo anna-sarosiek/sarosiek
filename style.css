@@ -1,13 +1,13 @@
 /* ====== Global layout ====== */
 body {
- font-family: "Helvetica", Arial, sans-serif; 
-  background-color: #ebe5d8 
+  font-family: "Helvetica", Arial, sans-serif;
+  background-color: #ebe5d8;
   color: #2b2b2b;
-  margin: 0 auto;
-  max-width: 860px;
+  margin: 0;
   padding: 50px 25px;
   line-height: 1.75;
   letter-spacing: 0.02em;
+  min-height: 100vh; /* pełna wysokość ekranu */
 }
 
 /* ====== Navigation ====== */
@@ -44,7 +44,7 @@ h1 {
 
 h2 {
   font-size: 1.4em;
-  color: #004eb3; /* jaśniejszy ton */
+  color: #004eb3; 
   text-transform: uppercase;
   margin-top: 2em;
 }
@@ -53,7 +53,7 @@ h2 {
 /* ====== Header ====== */
 header {
   background-color: #ebe5d8;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08); /* delikatny cień */
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08);
   padding: 20px;
   border-radius: 8px;
   margin-bottom: 40px;
