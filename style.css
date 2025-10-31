@@ -4,8 +4,8 @@ body {
   background-color: #ebe5d8 
   color: #2b2b2b;
   margin: 0 auto;
-  max-width: 820px;
-  padding: 45px 25px;
+  max-width: 860px;
+  padding: 50px 25px;
   line-height: 1.75;
   letter-spacing: 0.02em;
 }
@@ -52,11 +52,11 @@ h2 {
 
 /* ====== Header ====== */
 header {
-  background-color: #f7f3ea;
+  background-color: #ebe5d8;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08); /* delikatny cień */
   padding: 20px;
   border-radius: 8px;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 /* ====== Main content block ====== */
