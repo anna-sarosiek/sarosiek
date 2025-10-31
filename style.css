@@ -64,11 +64,13 @@ header:hover {
 
 /* ====== Main content ====== */
 main {
-  background-color: #fcfaf7;
+  background-color: #f0ece4; /* cieplejszy beż, zamiast bieli */
   border-radius: 12px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
   padding: 35px 45px;
+  border: 1px solid #e2dccf; /* subtelna ramka */
 }
+
 
 /* ====== Footer ====== */
 footer {
